@@ -48,7 +48,6 @@ value.addEventListener("click", function (details) {
     increasescore();
     bubblesmaker(172);
     ht();
-    timerValue += 2;
   } else {
     console.log("Try Again");
   }
