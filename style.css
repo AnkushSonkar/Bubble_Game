@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  display: flex;
+  align-content: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: olivedrab;
+  height: 70vh;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.gtop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(176, 224, 78);
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  padding: 10px;
+  gap: 13px;
+}
+
+.box {
+  position: relative;
+  top: 0;
+  display: flex;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ele {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  height: 100%;
+  gap: 15px;
+  overflow: hidden;
+  display: none;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+.bubble {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  padding: 5px;
+  gap: 10px;
+}
+
+.bubble:hover {
+  background-color: rgb(157, 185, 102);
+}
+
+.startcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 10px;
+}
+
+.startGame {
+  background: transparent;
+  color: gold;
+  font-size: 35px;
+  margin: 0;
+  border-radius: 50px;
+  padding: 6px 12px;
+  border-color: white;
+}
+
+#guide {
+  color: #f66f6f;
+  text-align: center;
+}
+
+.newgame {
+  border: 0;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: gold;
+}
+
+.Restart,
+.Back {
+  display: none;
+}
+
+.exitgame {
+  background: #ff0000;
+  color: white;
+  padding: 5px;
+  border: 0;
+  border-radius: 50%;
+}
+
+/* media query for 786px */
+
+@media screen and (max-width: 450px) {
+  .main {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bcon h2 {
+    flex-wrap: nowrap;
+  }
+}
